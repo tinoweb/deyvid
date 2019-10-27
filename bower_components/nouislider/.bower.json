@@ -1,0 +1,37 @@
+{
+  "name": "nouislider",
+  "description": "A lightweight, highly customizable range slider without bloat. Touch support on all modern devices and responsive design ready!",
+  "keywords": [
+    "slider",
+    "form",
+    "range",
+    "handles",
+    "touch",
+    "input",
+    "slide"
+  ],
+  "main": [
+    "distribute/nouislider.js",
+    "distribute/nouislider.min.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "**/*.json"
+  ],
+  "license": "MIT",
+  "homepage": "https://refreshless.com/nouislider/",
+  "author": {
+    "name": "Leon Gersen"
+  },
+  "version": "14.0.2",
+  "_release": "14.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "14.0.2",
+    "commit": "9dc86769ca06bedd8822eba63295b21fdb1be3b5"
+  },
+  "_source": "https://github.com/leongersen/noUiSlider.git",
+  "_target": "^14.0.2",
+  "_originalSource": "nouislider",
+  "_direct": true
+}

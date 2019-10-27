@@ -1,0 +1,17 @@
+{
+  "name": "imob",
+  "authors": [
+    "tinoweb <tino477@gmail.com>"
+  ],
+  "description": "descricao do projeto imobiliario",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "slick-carousel": "^1.8.1",
+    "nouislider": "^14.0.2",
+    "bootstrap": "v3.3.6",
+    "Waves": "waves#v0.7.5"
+  }
+}

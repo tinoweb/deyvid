@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Deivyd Corretor - Deivyd Paiva Malaquias</title>
+
+        <!-- Vendors -->
+        <!-- Material design colors -->
+        <link href="bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+
+        <!-- CSS animations -->
+        <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+
+        <!-- Select2 - Custom Selects -->
+        <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
+
+        <!-- Slick Carousel -->
+        <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+
+        <!-- NoUiSlider - Input Slider -->
+        <link rel="stylesheet" href="bower_components/nouislider/distribute/nouislider.min.css">
+
+        <!-- Site -->
+        <link rel="stylesheet" href="css/app_1.min.css">
+        <link rel="stylesheet" href="css/app_2.min.css">
+
+        <!-- Page Loader JS -->
+        <script src="js/page-loader.min.js" async></script>
+    <!-- <script src='/google_analytics_auto.js'></script> -->
+</head>
+
+    <body>
+        <!-- Start page loader -->
+        <div id="page-loader">
+            <div class="page-loader__spinner"></div>
+        </div>
+        <!-- End page loader -->
+
+        <header id="header">
+            <div class="header__top">
+                <div class="container">
+                    <ul class="top-nav">
+
+                        <li class="pull-right top-nav__icon">
+                            <a href=""><i class="zmdi zmdi-facebook"></i></a>
+                        </li>
+                        <li class="pull-right top-nav__icon">
+                            <a href=""><i class="zmdi zmdi-twitter"></i></a>
+                        </li>
+                        <li class="pull-right top-nav__icon">
+                            <a href=""><i class="zmdi zmdi-google"></i></a>
+                        </li>
+
+                        <li class="pull-left hidden-xs"><span><i class="zmdi zmdi-email"></i>deivydcorretor7441@gmail.com</span></li>
+                        <li class="pull-left hidden-xs"><span><i class="zmdi zmdi-phone"></i>(67) 99248-5092</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header__main">
+                <div class="container">
+                    <a class="logo" href="index.html">
+                        <img src="img/logo.png" alt="">
+                        <div class="logo__text">
+                            <span>Deivyd Corretor</span>
+                            <span>Deivyd Paiva Malaquias</span>
+                        </div>
+                    </a>
+
+                    <div class="navigation-trigger visible-xs visible-sm" data-rmd-action="block-open" data-rmd-target=".navigation">
+                        <i class="zmdi zmdi-menu"></i>
+                    </div>
+
+                    <ul class="navigation">
+                        <li class="visible-xs visible-sm"><a class="navigation__close" data-rmd-action="navigation-close" href=""><i class="zmdi zmdi-long-arrow-right"></i></a></li>
+
+                        <li class="active navigation__dropdown">
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li class="navigation__dropdown">
+                            <a href="" class="prevent-default">Ver Imóvies</a>
+
+                            <ul class="navigation__drop-menu">
+                                <li><a href="listings-grid.html">Listar todos Imóveis</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#submit-property.html">Cadastre seu Imóvel</a></li>
+
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header__recommended">
+                <div class="my-location">
+                    <div class="my-location__title">Propriedades próximas à sua localização</div>
+                    <div class="dropdown my-location__location hidden-xs">
+                        <a href="#" data-toggle="dropdown"><i class="zmdi zmdi-pin"></i> Mato Grosso, MT - Diamantino</a>
+
+                        <!-- <div class="dropdown-menu pull-right stop-propagate">
+                            <strong>Change Location</strong>
+                            <small>Set your location to get list of properties nearby you</small>
+
+                            <form>
+                                <div class="form-group form-group--float">
+                                    <input type="email" class="form-control" placeholder="Enter City, State, Zip">
+                                    <i class="form-group__bar"></i>
+                                </div>
+
+                                <div class="my-location__map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84147.43307199534!2d-74.15863267618451!3d40.71380993356828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2slk!4v1465216708326" style="border:0; width: 100%; height: 250px;" allowfullscreen></iframe>
+                                </div>
+                            </form>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="listings-grid">
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/1.jpg" alt="">
+                                <div class="listings-grid__price">R$ 120.000</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>Campo Verde CENTRO</small>
+                                <h5>Apartamento - Venda</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--bed"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--bath"></i> 02</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 02</li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/2.jpg" alt="">
+                                <div class="listings-grid__price">R$ 2.000</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>Jardim dos Jacarandás, Sinop/MT</small>
+                                <h5>Locação Residencial</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--bed"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--bath"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 01</li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/3.jpg" alt="">
+                                <div class="listings-grid__price">R$910.000</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>Campo Verde CENTRO</small>
+                                <h5>Apartamento - Venda</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--bed"></i> 02</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--bath"></i> 01</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 01</li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/4.jpg" alt="">
+                                <div class="listings-grid__price">R$ 2.000</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>Jardim dos Jacarandás, Sinop/MT</small>
+                                <h5>Locação Residencial</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--bed"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--bath"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 01</li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/5.jpg" alt="">
+                                <div class="listings-grid__price">R$ 2.000</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>Jardim dos Jacarandás, Sinop/MT</small>
+                                <h5>Locação Residencial</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--bed"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--bath"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 01</li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/6.jpg" alt="">
+                                <div class="listings-grid__price">R$ 2.000</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>Jardim dos Jacarandás, Sinop/MT</small>
+                                <h5>Locação Residencial</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--bed"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--bath"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 01</li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/7.jpg" alt="">
+                                <div class="listings-grid__price">R$ 2.000</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>Jardim dos Jacarandás, Sinop/MT</small>
+                                <h5>Locação Residencial</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--bed"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--bath"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 01</li>
+                            </ul>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html">
+                            <div class="listings-grid__main">
+                                <img src="img/demo/listing/thumbs/8.jpg" alt="">
+                                <div class="listings-grid__price">R$ 2.000</div>
+                            </div>
+
+                            <div class="listings-grid__body">
+                                <small>Jardim dos Jacarandás, Sinop/MT</small>
+                                <h5>Locação Residencial</h5>
+                            </div>
+
+                            <ul class="listings-grid__attrs">
+                                <li><i class="listings-grid__icon listings-grid__icon--bed"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--bath"></i> 03</li>
+                                <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 01</li>
+                            </ul>
+                        </a>
+
+                        <div class="listings-grid__favorite">
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container">
+                <header class="section__title">
+                    <h2>Mais de 100 Imóveis para venda e aluguel</h2>
+                    <small>Vilas, apartamentos, escritórios e edifícios comerciais</small>
+                </header>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card__header card__header--minimal">
+                                <h2>Propriedades recentes para venda</h2>
+                                <small>Nunc urnami tempor eget ipsum eurutrum gravida tellus</small>
+                            </div>
+
+                            <div class="grid-widget grid-widget--listings">
+                                <div class="col-xs-6">
+                                    <a class="grid-widget__item" href="listing-detail.html">
+                                        <img src="img/demo/listing/thumbs/9.jpg" alt="">
+
+                                        <div class="grid-widget__info">
+                                            <h3>$3,452,000</h3>
+                                            <small>4313 Beverly Hills, CA 90210</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="grid-widget__item" href="listing-detail.html">
+                                        <img src="img/demo/listing/thumbs/10.jpg" alt="">
+
+                                        <div class="grid-widget__info">
+                                            <h3>$990,000</h3>
+                                            <small>San Francisco, CA 937202</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="grid-widget__item" href="listing-detail.html">
+                                        <img src="img/demo/listing/thumbs/11.jpg" alt="">
+
+                                        <div class="grid-widget__info">
+                                            <h3>1,500,000</h3>
+                                            <small>21 Shop St, San Francisco</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="grid-widget__item" href="listing-detail.html">
+                                        <img src="img/demo/listing/thumbs/12.jpg" alt="">
+
+                                        <div class="grid-widget__info">
+                                            <h3>$1,650,690</h3>
+                                            <small>13 Beverly Hills, CA 01210</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a class="view-more" href="grid-listings.html">
+                                Ver todas as propriedades à venda <i class="zmdi zmdi-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card__header card__header--minimal">
+                                <h2>Imóveis recentes para aluguer</h2>
+                                <small>Suspendisse quis massa fringilla sagittis velit utultrices tellus</small>
+                            </div>
+
+                            <div class="grid-widget grid-widget--listings">
+                                <div class="col-xs-6">
+                                    <a class="grid-widget__item" href="listing-detail.html">
+                                        <img src="img/demo/listing/thumbs/13.jpg" class="img-responsive" alt="">
+                                        <div class="grid-widget__info">
+                                            <h3>$1,810,000</h3>
+                                            <small>4313 Beverly Hills, CA 90210</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="grid-widget__item" href="listing-detail.html">
+                                        <img src="img/demo/listing/thumbs/14.jpg" alt="">
+                                        <div class="grid-widget__info">
+                                            <h3>$1,782,890</h3>
+                                            <small>700 Folcon St, San Fransisco, CA</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="grid-widget__item" href="listing-detail.html">
+                                        <img src="img/demo/listing/thumbs/15.jpg" alt="">
+                                        <div class="grid-widget__info">
+                                            <h3>$823,000</h3>
+                                            <small>1100 Sea avn, San Fransisco, CA</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="grid-widget__item" href="listing-detail.html">
+                                        <img src="img/demo/listing/thumbs/16.jpg" alt="">
+                                        <div class="grid-widget__info">
+                                            <h3>$2,543,000</h3>
+                                            <small>132 04th St, San Francisco</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a class="view-more" href="grid-listings.html">
+                                Ver todas as propriedades para alugar <i class="zmdi zmdi-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container hidden-xs">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="footer__block">
+                            <a class="logo clearfix" href="">
+                                <div class="logo__text">
+                                    <span>Daviyd Corretor</span>
+                                    <span>Deivyd Paiva Malaquias</span>
+                                </div>
+                            </a>
+
+                            <address class="m-t-20 m-b-20 f-14">
+                                Av. dos Tarumãs, 1443 - 
+                                Jardim Botânico, Sinop - MT
+                            </address>
+
+                            <div class="f-20">(67) 99248-5092</div>
+                            <div class="f-14 m-t-5">deivydcorretor7441@gmail.com</div>
+
+                            <div class="f-20 m-t-20">
+                                <a href="" class="m-r-10"><i class="zmdi zmdi-google"></i></a>
+                                <a href="" class="m-r-10"><i class="zmdi zmdi-facebook"></i></a>
+                                <a href=""><i class="zmdi zmdi-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="footer__block footer__block--blog">
+                            <div class="footer__title">Últimas do nosso blog</div>
+
+                            <a href="">
+                                Titulo do artigo sobre o assunto Imobiliaria
+                                <small>Em 25/09/2019 as 6:00 PM</small>
+                            </a>
+                            <a href="">
+                                Como fazer a melhor escolha de uma casa
+                                <small>Em 22/09/2019 as 4:00 PM</small>
+                            </a>
+                            <a href="">
+                                Valorização do seu imovel é permanente
+                                <small>Em 10/08/2019 as 6:00 PM</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="footer__block">
+                            <div class="footer__title">Aviso Legal</div>
+
+                            <div>Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="container">
+                    <span class="footer__copyright">© Daviyd Corretor</span>
+
+                    <a href="">Sobre nós</a>
+                    <a href="">Termos & Condições</a>
+                    <a href="">Politica de Privacidade</a>
+                </div>
+
+                <div class="footer__to-top" data-rmd-action="scroll-to" data-rmd-target="html">
+                    <i class="zmdi zmdi-chevron-up"></i>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Javascript -->
+
+        <!-- jQuery -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- Waves button ripple effects -->
+        <script src="bower_components/Waves/dist/waves.min.js"></script>
+
+        <!-- Select 2 - Custom Selects -->
+        <script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+
+        <!-- Slick Carousel - Custom Alerts -->
+        <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+
+        <!-- NoUiSlider -->
+        <script src="bower_components/nouislider/distribute/nouislider.min.js"></script>
+
+        <!-- Site functions and actions -->
+        <script src="js/app.min.js"></script>
+
+        <!-- Demo only -->
+        <script src="js/demo/demo.js"></script>
+    </body>
+</html>
